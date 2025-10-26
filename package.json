@@ -41,13 +41,15 @@
     "yup": "^1.7.1"
   },
   "devDependencies": {
-    "@testing-library/react-hooks": "^8.0.1",
+    "@testing-library/jest-native": "^5.4.3",
+    "@testing-library/react": "^16.3.0",
     "@types/react": "~19.1.10",
     "@types/react-dom": "^19.2.2",
     "typescript": "~5.9.2"
   },
   "jest": {
     "preset": "jest-expo",
+    "testEnvironment": "jsdom",
     "transformIgnorePatterns": [
       "node_modules/(?!(?:.pnpm/)?((jest-)?react-native|@react-native(-community)?|expo(nent)?|@expo(nent)?/.*|@expo-google-fonts/.*|react-navigation|@react-navigation/.*|@sentry/react-native|native-base|react-native-svg))"
     ],
@@ -61,6 +63,11 @@
       "!**/.expo/**",
       "!**/types.ts"
     ]
+  },
+  "overrides": {
+    "@testing-library/react-hooks": {
+      "@types/react": "17.0.89"
+    }
   },
   "private": true
 }
