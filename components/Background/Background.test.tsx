@@ -32,7 +32,7 @@ describe("Background", () => {
       </Background>
     );
 
-    const container = getByTestId("child").parent?.parent; // parent of child is container
+    const container = getByTestId("child").parent?.parent;
     expect(container?.props.style).toMatchObject({
       flex: 1,
       backgroundColor: "#eff6ff",

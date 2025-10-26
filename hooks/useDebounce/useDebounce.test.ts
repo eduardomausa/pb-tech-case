@@ -22,11 +22,11 @@ describe("useDebounce", () => {
     expect(result.current).toBe("test1");
 
     rerender({ value: "test2" });
-    expect(result.current).toBe("test1"); // Still old value before delay
+    expect(result.current).toBe("test1");
 
     act(() => {
       jest.advanceTimersByTime(500);
     });
-    expect(result.current).toBe("test2"); // New value after delay
+    expect(result.current).toBe("test2");
   });
 });

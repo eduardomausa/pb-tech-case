@@ -1,4 +1,3 @@
-// storageService.test.ts
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import {
   DEFAULT_USER_METADATA,

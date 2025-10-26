@@ -18,6 +18,7 @@ cd pb-tech-case
 ```
 
 2. Install dependencies:
+   2.1 Run with `--legacy-peer-deps` for now because there are some dependencies conflicts to be fixed
 
 ```bash
 npm install --legacy-peer-deps

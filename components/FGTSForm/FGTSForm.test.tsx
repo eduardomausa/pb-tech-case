@@ -18,13 +18,11 @@ import { validatePhone } from "@/services/validatePhone/validatePhone";
 import { useRouter } from "expo-router";
 import FGTSForm from "../FGTSForm/FGTSForm";
 
-// Rest of your mocks...
 jest.mock("@/context/FormContext/FormContext");
 jest.mock("@/services/storage/storageService");
 jest.mock("@/services/validatePhone/validatePhone");
 jest.mock("expo-router");
 
-// Mock only the icon libraries (they often cause issues in tests)
 jest.mock("@expo/vector-icons/EvilIcons", () => {
   const { View } = require("react-native");
   return (props: any) => <View {...props} />;

@@ -1,8 +1,6 @@
-// app/__tests__/_layout.test.tsx
 import { render, waitFor } from "@testing-library/react-native";
 import React from "react";
 
-// Mocks MUST come before importing the component
 jest.mock("@expo-google-fonts/montserrat", () => ({
   useFonts: jest.fn(() => [true, null]),
   Montserrat_400Regular: "Montserrat_400Regular",
@@ -24,7 +22,7 @@ jest.mock("@/context/FormContext/FormContext", () => ({
   FormProvider: ({ children }: any) => <>{children}</>,
 }));
 
-import RootLayout from "@/app/_layout"; // <-- Import AFTER mocks
+import RootLayout from "@/app/_layout";
 
 describe("RootLayout", () => {
   beforeEach(() => {

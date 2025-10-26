@@ -50,7 +50,7 @@ describe("FormInput", () => {
 
   it("calls onUnmaskedValueChange when typing in MaskInput", () => {
     const mockUnmaskedChange = jest.fn();
-    const mask = [/\d/, /\d/, "/", /\d/, /\d/]; // e.g., 12/34
+    const mask = [/\d/, /\d/, "/", /\d/, /\d/];
 
     const TestComponent = () => {
       const { control } = useForm<TestFormValues>({
