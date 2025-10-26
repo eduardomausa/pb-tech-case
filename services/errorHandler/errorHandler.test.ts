@@ -68,7 +68,7 @@ describe("handleApiError", () => {
   });
 
   it("should return default message for unexpected status", () => {
-    const response = createResponse(false, 418); // I'm a teapot 🍵
+    const response = createResponse(false, 418);
     const result = handleApiError(response) as ApiError;
     expect(result).toEqual({
       message: "Erro inesperado (418).",

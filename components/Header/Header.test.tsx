@@ -17,7 +17,7 @@ describe("Header", () => {
 
   it("has correct accessibility label and role", () => {
     const { getByRole } = render(<Header {...props} />);
-    const header = getByRole("header"); // Correct query
+    const header = getByRole("header");
 
     expect(header.props.accessibilityLabel).toBe(
       `${props.title}. ${props.subtitle}`

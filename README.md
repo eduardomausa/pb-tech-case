@@ -14,14 +14,14 @@ This is a React Native application built with Expo Router.
 1. Clone the repository:
 
 ```bash
-git clone <repository-url>
 cd pb-tech-case
 ```
 
 2. Install dependencies:
+   2.1 Run with `--legacy-peer-deps` for now because there are some dependencies conflicts to be fixed
 
 ```bash
-npm install
+npm install --legacy-peer-deps
 ```
 
 ## Running the Application
@@ -50,6 +50,7 @@ npx expo start
 - Expo Router for navigation
 - Custom font integration (Montserrat)
 - Form context for state management
+- AsyncStorage to cache form info
 
 ## Notes
 

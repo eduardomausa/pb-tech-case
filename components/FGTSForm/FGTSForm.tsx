@@ -17,18 +17,6 @@ import { FormPicker } from "../FormPicker/FormPicker";
 import SubmitButton from "../SubmitButton/SubmitButton";
 import schema from "./schema";
 
-// TO DO: Remover Consultar cache
-// const quickDebug = async () => {
-//   console.log("=".repeat(50));
-//   const cache = await StorageService.getFormCache();
-//   const meta = await StorageService.getUserMetadata();
-//   console.log("CACHE:", JSON.stringify(cache, null, 2));
-//   console.log("META:", JSON.stringify(meta, null, 2));
-//   console.log("=".repeat(50));
-// };
-
-// quickDebug();
-
 export default function FGTSForm() {
   const [phoneUnmasked, setPhoneUnmasked] = useState("");
   const [hasCheckedCache, setHasCheckedCache] = useState(false);
